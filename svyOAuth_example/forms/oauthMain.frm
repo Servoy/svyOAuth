@@ -1,0 +1,27 @@
+customProperties:"formComponent:false",
+extendsID:"E8B2A839-18F1-4D54-9A85-9CB949C9841E",
+items:[
+{
+extendsID:"2A5F4A4C-AB7B-4911-B94F-34313023357A",
+items:[
+{
+containsFormID:"45843363-6F35-46BA-A52C-1B502AFC1815",
+location:"20,150",
+text:"testGoogleCalendar",
+typeid:15,
+uuid:"D79A76F9-06DE-499D-BD44-E59DC5D65D74"
+}
+],
+typeid:16,
+uuid:"6F8B3BFB-CC49-4760-9988-1395F4300BE5"
+},
+{
+extendsID:"7B1D727F-5405-4F7D-A24E-291175E6FEA3",
+text:"OAuth2 for Servoy",
+typeid:7,
+uuid:"D30CAF8B-ADB5-4DBC-A9B3-62686E15EB41"
+}
+],
+name:"oauthMain",
+typeid:3,
+uuid:"13373A73-E6D4-4689-8D9F-BA196C8E2217"
