@@ -32,9 +32,9 @@ typeid:7,
 uuid:"6FDA5BB8-EFD5-40DD-ADED-7E4E7FD950BD"
 },
 {
-anchors:13,
+anchors:15,
 json:{
-anchors:13,
+anchors:15,
 columns:[
 {
 dataprovider:"event_summary",
@@ -58,7 +58,7 @@ svyUUID:"E80888B9-3A85-4D50-BD13-6B691E7D9E14"
 }
 ],
 foundset:{
-foundsetSelector:"mem:calendar_events"
+foundsetSelector:""
 },
 location:{
 x:30,

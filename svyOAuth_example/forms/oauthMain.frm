@@ -10,6 +10,13 @@ location:"20,150",
 text:"testGoogleCalendar",
 typeid:15,
 uuid:"D79A76F9-06DE-499D-BD44-E59DC5D65D74"
+},
+{
+containsFormID:"5AEACD2F-7A94-41D5-8908-1D9209183CDD",
+location:"100,150",
+text:"testLinkedIn",
+typeid:15,
+uuid:"EB2114CE-0D4D-4A99-ABCF-504E4E65C76B"
 }
 ],
 typeid:16,

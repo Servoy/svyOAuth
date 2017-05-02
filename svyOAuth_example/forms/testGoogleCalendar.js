@@ -28,7 +28,10 @@ function test(){
 	var str = res.getContent();
 
 	
+	// dump data
+	foundset.loadAllRecords();
 	foundset.deleteAllRecords();
+	
 	/** @type {{items:Array<{id:String,summary:String,description:String,start:{dateTime:String},end:{dateTime:String}}>}} */
 	var events = JSON.parse(str);
 	var items = events.items;

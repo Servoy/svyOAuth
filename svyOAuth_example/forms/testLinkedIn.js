@@ -29,5 +29,5 @@ function authorize(){
  * @properties={typeid:24,uuid:"217C607C-EC68-4DF3-B059-DD9C9A928AE0"}
  */
 function getPeople(){
-	scopes.svyLinkedIn.getPeople();
+	application.output(scopes.svyLinkedIn.getPeople());
 }
