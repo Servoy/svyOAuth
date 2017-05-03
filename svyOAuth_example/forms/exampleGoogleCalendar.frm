@@ -22,12 +22,13 @@ typeid:7,
 uuid:"50D2030D-1862-46D5-A6C2-A149C2052B0A"
 },
 {
-location:"500,150",
+location:"450,150",
 onActionMethodID:"F1067B9B-EE53-4591-B6B2-A3D47374FF1D",
 onDoubleClickMethodID:"-1",
 onRightClickMethodID:"-1",
-size:"80,30",
-text:"test",
+size:"130,30",
+styleClass:"btn btn-primary",
+text:"Load Events",
 typeid:7,
 uuid:"6FDA5BB8-EFD5-40DD-ADED-7E4E7FD950BD"
 },
@@ -38,22 +39,22 @@ anchors:15,
 columns:[
 {
 dataprovider:"event_summary",
-headerText:"header",
+headerText:"Summary",
 svyUUID:"3B044133-98B6-4361-8D43-4171B720EC25"
 },
 {
 dataprovider:"event_description",
-headerText:"header",
+headerText:"Description",
 svyUUID:"69444846-B79E-46CC-ACE9-ABBB13C8E230"
 },
 {
 dataprovider:"event_start",
-headerText:"header",
+headerText:"Start",
 svyUUID:"811BA53A-D857-40F0-AB7D-B5E4E1DCF0EE"
 },
 {
 dataprovider:"event_end",
-headerText:"header",
+headerText:"End",
 svyUUID:"E80888B9-3A85-4D50-BD13-6B691E7D9E14"
 }
 ],
@@ -99,7 +100,7 @@ typeid:19,
 uuid:"D5EE63FA-A7D9-4597-AD55-46C275C95FF7"
 }
 ],
-name:"testGoogleCalendar",
+name:"exampleGoogleCalendar",
 showInMenu:true,
 typeid:3,
 uuid:"45843363-6F35-46BA-A52C-1B502AFC1815"
