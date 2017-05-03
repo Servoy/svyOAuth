@@ -89,7 +89,7 @@ function getClient(){
  * @private 
  * @properties={typeid:24,uuid:"CF28CC7D-B133-4971-8D7E-A7ECDFB63A0A"}
  */
-function getPeople(){
+function connectLinkedIn(){
 	
 	// drop (in-mem) data
 	foundset.loadAllRecords();
@@ -126,4 +126,9 @@ function getPeople(){
 	picture_url = profile.pictureUrl;
 	
 	databaseManager.saveData();
+	
+	// show profile components
+	elements.linkedInLabel.visible = true;
+	elements.linkedInPicture.visible = true;
+	elements.linkedInProfile.visible = true;
 }

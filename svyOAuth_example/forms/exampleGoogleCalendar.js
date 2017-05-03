@@ -122,6 +122,7 @@ function loadCalendarEvents(){
 	}
 	databaseManager.saveData();
 	application.output('Loaded '+foundset.getSize()+' events');
+	
 }
 
 /**
