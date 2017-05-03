@@ -254,7 +254,7 @@ function AuthorizationRequest(){
 					new Packages.com.google.api.client.http.GenericUrl(this.authServerURL)
 			)
 			.setScopes(toList(this.scopeArray))
-            .setDataStoreFactory(getDataStoreFactory())
+            .setDataStoreFactory(getDataStoreFactory(this.clientID))
 //	        .setAccessType("offline") ???
             .build();
 	     return flow; 
@@ -348,28 +348,32 @@ function HttpResponse(res){
 
 /**
  * @private 
+ * @param {String} subdir
  * @return {Packages.com.google.api.client.util.store.FileDataStoreFactory}
  * @properties={typeid:24,uuid:"0C893D3F-212E-488C-A295-0973C3705109"}
  */
-function getDataStoreFactory(){
-	if(!DATA_STORE_FACTORY){
-		DATA_STORE_FACTORY = new Packages.com.google.api.client.util.store.FileDataStoreFactory(getDataStoreDir());
-	}
-	return DATA_STORE_FACTORY;
+function getDataStoreFactory(subdir){
+	return new Packages.com.google.api.client.util.store.FileDataStoreFactory(getDataStoreDir(subdir));
+	
+//	if(!DATA_STORE_FACTORY){
+//		DATA_STORE_FACTORY = new Packages.com.google.api.client.util.store.FileDataStoreFactory(getDataStoreDir(subdir));
+//	}
+//	return DATA_STORE_FACTORY;
 }
 
 /**
  * TODO Externalize for configuration ?
  * @private 
+ * @param {String} subdir
  * @return {java.io.File}
  * @properties={typeid:24,uuid:"A974AF3C-CBEF-48EE-8602-951B7C36DDC8"}
  */
-function getDataStoreDir(){
+function getDataStoreDir(subdir){
 	if(!DATA_STORE_DIR){
 		DATA_STORE_DIR = new java.io.File(
 			java.lang.System.getProperty("user.home"), ".servoy/oAuth-dataStore");
 	}
-	return DATA_STORE_DIR;
+	return new java.io.File(DATA_STORE_DIR,subdir);
 }
 
 /**
